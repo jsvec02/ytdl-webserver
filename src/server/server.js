@@ -39,6 +39,8 @@ const provision = async () => {
         path: path.join(__dirname, '../../public/temp'),
         audioOnly: false
       }
+      
+      print(options)
 
       mkdirp(options.path, err => {
         if (err) {
